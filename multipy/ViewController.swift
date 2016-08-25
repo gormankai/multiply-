@@ -10,16 +10,30 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
+    @IBOutlet weak var logoImg: UIImageView!
+    @IBOutlet weak var startBtn: UIButton!
+    @IBOutlet weak var typeNumberTxt: UITextField!
+    
+    @IBOutlet weak var addBtn: UIButton!
+    @IBOutlet weak var numberLbl: UILabel!
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func whenStartBtnPressed(sender: UIButton) {
+        if typeNumberTxt.text != nil && typeNumberTxt.text != "" {
+            
+            logoImg.hidden = false
+            startBtn.hidden = false
+            typeNumberTxt.hidden = false
+            
+            addBtn.hidden = true
+            numberLbl.hidden = true
     }
-
+}
 
 }
+
+
+
+
+
+
 
