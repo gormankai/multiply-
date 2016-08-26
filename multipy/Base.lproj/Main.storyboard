@@ -43,6 +43,9 @@
                                     <constraint firstAttribute="width" constant="211" id="qn6-yP-Hzb"/>
                                 </constraints>
                                 <state key="normal" image="add"/>
+                                <connections>
+                                    <action selector="onAddBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tPk-yd-GgG"/>
+                                </connections>
                             </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="PRESS ADD TO ADD " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JXQ-sr-ut7" userLabel="numberLbl">
                                 <rect key="frame" x="139" y="190" width="329" height="104"/>
@@ -65,8 +68,7 @@
                                     <color key="titleColor" red="0.98810392618179321" green="0.98815041780471802" blue="0.99628108739852905" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="onStartBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4r3-At-Ud6"/>
-                                    <action selector="whenStartBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IEn-Hx-PJ7"/>
+                                    <action selector="onStartBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qqc-xg-RUc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -97,8 +99,7 @@
                     <connections>
                         <outlet property="addBtn" destination="4uP-mB-DMM" id="a9Y-4S-HDF"/>
                         <outlet property="logoImg" destination="vTq-yu-Sax" id="akw-wd-Rg3"/>
-                        <outlet property="numberLbl" destination="JXQ-sr-ut7" id="0er-14-22l"/>
-                        <outlet property="numbersLbl" destination="JXQ-sr-ut7" id="yB8-cL-McA"/>
+                        <outlet property="numbersLbl" destination="JXQ-sr-ut7" id="D1p-xg-vBh"/>
                         <outlet property="startBtn" destination="cgZ-de-Vte" id="y9v-pj-gWN"/>
                         <outlet property="typeNumberTxt" destination="I9R-wC-U74" id="0Z0-V4-nag"/>
                     </connections>
